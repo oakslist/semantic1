@@ -28,5 +28,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Siarhei_Varachai/work/github/repo/semantic1/PolygraphApp/agraph-4.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
