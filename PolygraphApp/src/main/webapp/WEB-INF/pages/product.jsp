@@ -10,13 +10,10 @@
 		<jsp:include page="/WEB-INF/pages/include/header.jsp" />
 	</div>
 	<div class="main">
-		<h2>Items in category:</h2>
+		<h2>${product.shortName}</h2>
 		<div class="items">
-			<ul>
-				<c:forEach items="${itemsList}" var="item">
-					<li><a href="<c:url value='/books/${item.shortName}'/>">${item.shortName}</a> </li>
-				</c:forEach>
-			</ul>
+			price: ${product.price}
+			quantity: ${product.quantity}
 		</div>
 		<h3>See Also:</h3>
 		<div class="also">

@@ -6,8 +6,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
 import org.poligraph.constants.AppConstants;
-import org.poligraph.constants.Jena2;
 import org.poligraph.model.bean.Triple;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,7 +26,12 @@ import com.hp.hpl.jena.util.FileManager;
 @Controller
 public class MainController {
 
-//	private static final Logger LOG = Logger.getLogger(MainController.class);
+	private static final Logger LOG = Logger.getLogger(MainController.class);
+	
+//		<a href="<c:url value='/games'/>"><spring:message
+//			code="label.GAMES" /></a>
+//		<a href="<c:url value='/cards'/>"><spring:message
+//			code="label.CARDS" /></
 
 	@RequestMapping(value = "/main")
 	public String mainPage(HttpServletRequest request, Model model,
@@ -34,14 +39,15 @@ public class MainController {
 
 		HttpSession session = request.getSession(false);
 		
-		List<Triple> allList = new ArrayList<Triple>();
-		model.addAttribute(AppConstants.FULL_TRIPLE_LIST, allList);
+		List<Triple> itemsList = new ArrayList<Triple>();
+		model.addAttribute(AppConstants.ITEMS_LIST, itemsList);
 		
 		return AppConstants.MAIN_PAGE;
 	}
 	
-	@RequestMapping(value = "/all")
-	public String allPage(HttpServletRequest request, Model model,
+		
+	@RequestMapping(value = "/notes")
+	public String notesPage(HttpServletRequest request, Model model,
 			ModelMap modelMap) {
 
 		HttpSession session = request.getSession(false);
@@ -50,7 +56,7 @@ public class MainController {
 
 		com.hp.hpl.jena.rdf.model.Model tripleModel = FileManager.get()
 				.loadModel(AppConstants.FILE_NAME);
-		List<Triple> allList = new ArrayList<Triple>();
+		List<Triple> itemsList = new ArrayList<Triple>();
 		String queryString = 
 				"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 				"PREFIX foaf: <http://xmlns.com/foaf/0.1/> " +
@@ -60,8 +66,9 @@ public class MainController {
 		try {
 			ResultSet results = qexec.execSelect();
 			while(results.hasNext()) {
+				
 				QuerySolution soln = results.nextSolution();
-				allList.add(new Triple(soln.get("s").toString(), 
+				itemsList.add(new Triple(soln.get("s").toString(), 
 						soln.get("p").toString(), soln.get("o").toString()));
 			}
 		} catch(Exception e) {
@@ -70,9 +77,47 @@ public class MainController {
 			qexec.close();
 		}
 		
-		model.addAttribute(AppConstants.FULL_TRIPLE_LIST, allList);
+		model.addAttribute(AppConstants.ITEMS_LIST, itemsList);
 		
 		return AppConstants.MAIN_PAGE;
 	}
+	
+	@RequestMapping(value = "/calendars")
+	public String calendarsPage(HttpServletRequest request, Model model,
+			ModelMap modelMap) {
+
+		HttpSession session = request.getSession(false);
+		
+		FileManager.get().addLocatorClassLoader(MainController.class.getClassLoader());
+
+		com.hp.hpl.jena.rdf.model.Model tripleModel = FileManager.get()
+				.loadModel(AppConstants.FILE_NAME);
+		List<Triple> itemsList = new ArrayList<Triple>();
+		String queryString = 
+				"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+				"PREFIX foaf: <http://xmlns.com/foaf/0.1/> " +
+				"SELECT ?s ?p ?o WHERE { ?s ?p ?o }";
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qexec = QueryExecutionFactory.create(query, tripleModel);
+		try {
+			ResultSet results = qexec.execSelect();
+			while(results.hasNext()) {
+				
+				QuerySolution soln = results.nextSolution();
+				itemsList.add(new Triple(soln.get("s").toString(), 
+						soln.get("p").toString(), soln.get("o").toString()));
+			}
+		} catch(Exception e) {
+			System.out.println(e);
+		} finally {
+			qexec.close();
+		}
+		
+		model.addAttribute(AppConstants.ITEMS_LIST, itemsList);
+		
+		return AppConstants.MAIN_PAGE;
+	}
+	
 
 }
+

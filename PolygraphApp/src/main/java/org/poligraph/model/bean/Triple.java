@@ -19,12 +19,16 @@ public class Triple implements Serializable {
 	}
 	
 	public Triple (String subject, String predicate, String object) {
-		this.subject = subject;
-		this.predicate = predicate;
-		this.object = object;
-		setSubjectShort(this.subject);
-		setPredicateShort(this.predicate);
-		setObjectShort(this.object);
+		setSubject(subject);
+		setPredicate(predicate);
+		setObject(object);
+	}
+	
+	private String getShortValue(String str) {
+		String[] array = str.split("/");
+		array = array[array.length - 1].split("#");
+		return array[array.length - 1].replace("#", ":")
+				.substring(0, array[array.length - 1].length());
 	}
 
 	public String getSubject() {
@@ -33,6 +37,7 @@ public class Triple implements Serializable {
 
 	public void setSubject(String subject) {
 		this.subject = subject;
+		setSubjectShort(this.subject);
 	}
 
 	public String getPredicate() {
@@ -41,6 +46,7 @@ public class Triple implements Serializable {
 
 	public void setPredicate(String predicate) {
 		this.predicate = predicate;
+		setPredicateShort(this.predicate);
 	}
 
 	public String getObject() {
@@ -49,6 +55,7 @@ public class Triple implements Serializable {
 
 	public void setObject(String object) {
 		this.object = object;
+		setObjectShort(this.object);
 	}
 	
 	/*short value*/
@@ -58,10 +65,7 @@ public class Triple implements Serializable {
 	}
 
 	public void setSubjectShort(String subjectShort) {
-		String[] array = subjectShort.split("/");
-		array = array[array.length - 1].split("#");
-		String str = array[array.length - 1].replace("#", ":").substring(0, array[array.length - 1].length());
-		this.subjectShort = str;
+		this.subjectShort = getShortValue(subjectShort);;
 	}
 
 	public String getPredicateShort() {
@@ -69,9 +73,7 @@ public class Triple implements Serializable {
 	}
 
 	public void setPredicateShort(String predicateShort) {
-		String[] array = predicateShort.split("/");
-		String str = array[array.length - 1].replace("#", ":").substring(0, array[array.length - 1].length());
-		this.predicateShort = str;
+		this.predicateShort = getShortValue(predicateShort);;
 	}
 
 	public String getObjectShort() {
@@ -79,12 +81,9 @@ public class Triple implements Serializable {
 	}
 
 	public void setObjectShort(String objectShort) {
-		String[] array = objectShort.split("/");
-		array = array[array.length - 1].split("#");
-		String str = array[array.length - 1].replace("#", ":").substring(0, array[array.length - 1].length());
-		this.objectShort = str;
+		this.objectShort = getShortValue(objectShort);
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Triple [subject=" + subject + ", predicate=" + predicate

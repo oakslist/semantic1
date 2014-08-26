@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.polygraphy.com/ontologies/polygraphy.owl#"
+     xml:base="http://www.polygraphy.com/ontologies/polygraphy.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl">
+        <rdfs:comment>The polygraphy ontology vocabulary made by Siarhei Varachai</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct"/>
+        <owl:inverseOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#isPropertyOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#isProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#isProductOf">
+        <owl:inverseOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#isProductPriceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#isProductPriceOf">
+        <owl:inverseOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductPrice"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#isProductOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#isProductSizeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#isProductSizeOf">
+        <owl:inverseOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductSize"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#isProductOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#isPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#isPropertyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#isProductOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasPicture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPicture">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#BookNamed -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#BookNamed">
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct">
+        <rdfs:label>BookProduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+        <rdfs:comment>Any Books</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarNamed -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarNamed">
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct">
+        <rdfs:label>CalendarProduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+        <rdfs:comment>Any Calendar Product</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#CardNamed -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CardNamed">
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct">
+        <rdfs:label>CardProduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+        <rdfs:comment>Any Card Product</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#GameNamed -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#GameNamed">
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct">
+        <rdfs:label>GameProduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any Game Product</rdfs:comment>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct">
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#NoteNamed -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteNamed">
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct">
+        <rdfs:label>NoteProduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+        <rdfs:comment>Any Notebooks</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#Price -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Price">
+        <rdfs:label>Price</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Property"/>
+        <owl:disjointWith rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Size"/>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+        <rdfs:comment>Product Price</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#Product -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Product">
+        <rdfs:label>Product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy>Siarhei</rdfs:isDefinedBy>
+        <rdfs:comment>polygraphic product</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#Property -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Property">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:seeAlso rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#Size -->
+
+    <owl:Class rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Size">
+        <rdfs:label>Size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Property"/>
+        <rdfs:isDefinedBy>Siarhei V</rdfs:isDefinedBy>
+        <rdfs:comment>Product Size</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#AliceInTheWonderland -->
+
+    <owl:NamedIndividual rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#AliceInTheWonderland">
+        <rdf:type rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+        <rdfs:label>AliceInTheWonderland</rdfs:label>
+        <hasQuantity rdf:datatype="&xsd;integer">15</hasQuantity>
+        <hasPriceUSD rdf:datatype="&xsd;integer">21</hasPriceUSD>
+        <rdfs:comment>Book about a girl</rdfs:comment>
+        <rdfs:isDefinedBy>Lewis Carroll</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Lewis_Carroll"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#Dune -->
+
+    <owl:NamedIndividual rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Dune">
+        <rdf:type rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+        <rdfs:label>Dune</rdfs:label>
+        <hasPriceUSD rdf:datatype="&xsd;integer">13</hasPriceUSD>
+        <hasQuantity rdf:datatype="&xsd;integer">4</hasQuantity>
+        <rdfs:isDefinedBy>Franklin Patrick Herbert, Jr.</rdfs:isDefinedBy>
+        <rdfs:comment>About living in sand and space</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Frank_Herbert"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Dune_(novel)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#Futurama -->
+
+    <owl:NamedIndividual rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Futurama">
+        <rdf:type rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+        <rdfs:label>Futurama</rdfs:label>
+        <hasPriceUSD rdf:datatype="&xsd;integer">9</hasPriceUSD>
+        <hasQuantity rdf:datatype="&xsd;integer">99</hasQuantity>
+        <rdfs:comment>Book about Future</rdfs:comment>
+        <rdfs:comment rdf:resource="http://en.wikipedia.org/wiki/Futurama"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Matt_Groening"/>
+        <rdfs:isDefinedBy rdf:resource="http://en.wikipedia.org/wiki/Matt_Groening"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#TheSimpsons -->
+
+    <owl:NamedIndividual rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#TheSimpsons">
+        <rdf:type rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+        <rdfs:label>TheSimpsons</rdfs:label>
+        <hasPriceUSD rdf:datatype="&xsd;integer">20</hasPriceUSD>
+        <hasQuantity rdf:datatype="&xsd;integer">5</hasQuantity>
+        <rdfs:comment>Books about Simpsons family</rdfs:comment>
+        <rdfs:isDefinedBy>Matt Groening</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Futurama"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Life_in_Hell"/>
+        <rdfs:isDefinedBy rdf:resource="http://en.wikipedia.org/wiki/Matt_Groening"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/The_Simpsons"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.polygraphy.com/ontologies/polygraphy.owl#The_Hitchhiker&apos;TheHitchhikersGuideToTheGalaxy -->
+
+    <owl:NamedIndividual rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#The_Hitchhiker&apos;TheHitchhikersGuideToTheGalaxy">
+        <rdf:type rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+        <rdfs:label>TheHitchhikersGuideToTheGalaxy</rdfs:label>
+        <hasPriceUSD rdf:datatype="&xsd;integer">14</hasPriceUSD>
+        <hasQuantity rdf:datatype="&xsd;integer">2</hasQuantity>
+        <rdfs:comment>Guide about adventures</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://cy.wikipedia.org/wiki/Douglas_Adams"/>
+        <rdfs:isDefinedBy rdf:resource="https://cy.wikipedia.org/wiki/Douglas_Adams"/>
+        <rdfs:seeAlso rdf:resource="https://cy.wikipedia.org/wiki/The_Hitchhiker&apos;s_Guide_to_the_Galaxy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
+            <rdf:Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
