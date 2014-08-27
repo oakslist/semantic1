@@ -10,6 +10,7 @@ public class Product implements Serializable {
 	private String shortName;
 	private int price;
 	private int quantity;
+	private String link;
 	
 	public Product() {
 		
@@ -60,12 +61,22 @@ public class Product implements Serializable {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
 
 	@Override
 	public String toString() {
 		return "Product [fullName=" + fullName + ", shortName=" + shortName
-				+ ", price=" + price + ", quantity=" + quantity + "]";
+				+ ", price=" + price + ", quantity=" + quantity + ", link="
+				+ link + "]";
 	}
-	
+
+
 	
 }

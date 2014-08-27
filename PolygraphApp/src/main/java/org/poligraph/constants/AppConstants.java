@@ -6,7 +6,7 @@ package org.poligraph.constants;
 public class AppConstants {
 	
 //	public static final String FILE_NAME = "c:/Users/Siarhei_Varachai/work/github/repo/semantic1/PolygraphApp/src/main/resources/test.rdf";
-	public static final String FILE_NAME = "c:/Users/Siarhei_Varachai/work/github/repo/semantic1/PolygraphApp/src/main/resources/Varachai.rdf";
+	public static final String FILE_NAME = "c:/Users/Siarhei_Varachai/work/github/repo/semantic1/PolygraphApp/src/main/resources/Varachai.xml";
 	
 	public static final String MAIN_PAGE = "main";
 	public static final String PRODUCT_PAGE = "product";

@@ -12,8 +12,9 @@
 	<div class="main">
 		<h2>${product.shortName}</h2>
 		<div class="items">
-			price: ${product.price}
-			quantity: ${product.quantity}
+			<p><img src="${product.link}" width="200" height="200"></p>
+			<p>price: ${product.price}$</p>
+			<p>quantity: ${product.quantity}</p>
 		</div>
 		<h3>See Also:</h3>
 		<div class="also">

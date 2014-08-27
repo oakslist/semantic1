@@ -1,112 +1,112 @@
 <?xml version="1.0"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <Description rdf:nodeID="bFD59B2DEx375">
+  <Description rdf:nodeID="bFD59B2DEx421">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx374"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx420"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx374">
+  <Description rdf:nodeID="bFD59B2DEx420">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx373"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx419"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx373">
+  <Description rdf:nodeID="bFD59B2DEx419">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx372"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx418"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx372">
+  <Description rdf:nodeID="bFD59B2DEx418">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx371"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx417"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx371">
+  <Description rdf:nodeID="bFD59B2DEx417">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx370"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx416"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx370">
+  <Description rdf:nodeID="bFD59B2DEx416">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct"/>
     <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx369">
+  <Description rdf:nodeID="bFD59B2DEx415">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <ns0:members xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:nodeID="bFD59B2DEx375"/>
+    <ns0:members xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:nodeID="bFD59B2DEx421"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx368">
+  <Description rdf:nodeID="bFD59B2DEx414">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx367"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx413"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx367">
+  <Description rdf:nodeID="bFD59B2DEx413">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx366"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx412"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx366">
+  <Description rdf:nodeID="bFD59B2DEx412">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx365"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx411"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx365">
+  <Description rdf:nodeID="bFD59B2DEx411">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct"/>
-    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx364"/>
+    <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:nodeID="bFD59B2DEx410"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx364">
+  <Description rdf:nodeID="bFD59B2DEx410">
     <ns0:first xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct"/>
     <ns0:rest xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx363">
+  <Description rdf:nodeID="bFD59B2DEx409">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <ns0:members xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:nodeID="bFD59B2DEx368"/>
+    <ns0:members xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:nodeID="bFD59B2DEx414"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx362">
+  <Description rdf:nodeID="bFD59B2DEx408">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx361">
+  <Description rdf:nodeID="bFD59B2DEx407">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx360">
+  <Description rdf:nodeID="bFD59B2DEx406">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx359">
+  <Description rdf:nodeID="bFD59B2DEx405">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx358">
+  <Description rdf:nodeID="bFD59B2DEx404">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx357">
+  <Description rdf:nodeID="bFD59B2DEx403">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx356">
+  <Description rdf:nodeID="bFD59B2DEx402">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx355">
+  <Description rdf:nodeID="bFD59B2DEx401">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx354">
+  <Description rdf:nodeID="bFD59B2DEx400">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
-  <Description rdf:nodeID="bFD59B2DEx353">
+  <Description rdf:nodeID="bFD59B2DEx399">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns0:onProperty xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD"/>
     <ns0:someValuesFrom xmlns:ns0="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#BookProduct">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx354"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx353"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx400"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx399"/>
     <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Any Books</ns0:comment>
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">BookProduct</ns0:label>
@@ -156,8 +156,8 @@
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CardProduct">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx358"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx357"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx404"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx403"/>
     <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Any Card Product</ns0:comment>
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">CardProduct</ns0:label>
@@ -189,6 +189,7 @@
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <ns0:hasPriceUSD xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns0:hasPriceUSD>
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Little Calendar</ns0:comment>
+    <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">PocketCalendar</ns0:label>
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://en.wikipedia.org/wiki/Calendar#Physical_calendars"/>
     <ns0:hasQuantity xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ns0:hasQuantity>
   </Description>
@@ -222,15 +223,6 @@
     <ns0:isDefinedBy xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://en.wikipedia.org/wiki/Matt_Groening"/>
     <ns0:hasQuantity xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns0:hasQuantity>
   </Description>
-  <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#OrdinaryCalendar2015">
-    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
-    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns0:hasPriceUSD xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns0:hasPriceUSD>
-    <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Just calendar 2015</ns0:comment>
-    <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">OrdinaryCalendar2015</ns0:label>
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://en.wikipedia.org/wiki/Calendar#Arithmetic_and_astronomical_calendars"/>
-    <ns0:hasQuantity xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</ns0:hasQuantity>
-  </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProductSize">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <ns0:subPropertyOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#hasProduct"/>
@@ -249,14 +241,6 @@
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#GameNamed">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#NamedProduct"/>
-  </Description>
-  <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#OrdinaryCalendar2016">
-    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
-    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns0:hasPriceUSD xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns0:hasPriceUSD>
-    <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Just calendar 2016</ns0:comment>
-    <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">OrdinaryCalendar2016</ns0:label>
-    <ns0:hasQuantity xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">209</ns0:hasQuantity>
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Size">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -283,8 +267,8 @@
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#GameProduct">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx360"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx359"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx406"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx405"/>
     <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Any Game Product</ns0:comment>
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">GameProduct</ns0:label>
@@ -306,8 +290,8 @@
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#NoteProduct">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx362"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx361"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx408"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx407"/>
     <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Any Notebooks</ns0:comment>
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">NoteProduct</ns0:label>
@@ -324,8 +308,8 @@
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct">
     <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx356"/>
-    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx355"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx402"/>
+    <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="bFD59B2DEx401"/>
     <ns0:subClassOf xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#Product"/>
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Any Calendar Product</ns0:comment>
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">CalendarProduct</ns0:label>
@@ -361,15 +345,6 @@
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://en.wikipedia.org/wiki/Matt_Groening"/>
     <ns0:isDefinedBy xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://en.wikipedia.org/wiki/Matt_Groening"/>
     <ns0:hasQuantity xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</ns0:hasQuantity>
-  </Description>
-  <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#OrdinaryCalendar2014">
-    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.polygraphy.com/ontologies/polygraphy.owl#CalendarProduct"/>
-    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns0:hasPriceUSD xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns0:hasPriceUSD>
-    <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">Just calendar 2014</ns0:comment>
-    <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">OrdinaryCalendar2014</ns0:label>
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://en.wikipedia.org/wiki/Calendar#Physical_calendars"/>
-    <ns0:hasQuantity xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns0:hasQuantity>
   </Description>
   <Description rdf:about="http://www.polygraphy.com/ontologies/polygraphy.owl#Aliase">
     <ns0:hasPicture xmlns:ns0="http://www.polygraphy.com/ontologies/polygraphy.owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://img5a.flixcart.com/image/board-game/6/v/z/tactic-alias-a-game-that-makes-people-talk-400x400-imadhd77wpnyhshj.jpeg</ns0:hasPicture>
