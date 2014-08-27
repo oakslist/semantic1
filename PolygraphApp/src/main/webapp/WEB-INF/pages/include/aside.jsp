@@ -14,15 +14,15 @@
 			<ul class="pages-aside-ul">
 				<li><a href="<c:url value='/main'/>"><spring:message
 					code="label.HOME" /></a></li>
-				<li><a href="<c:url value='/books'/>"><spring:message
+				<li><a href="<c:url value='/BookProduct'/>"><spring:message
 					code="label.BOOKS" /></a></li>
-				<li><a href="<c:url value='/notes'/>"><spring:message
+				<li><a href="<c:url value='/NoteProduct'/>"><spring:message
 					code="label.NOTES" /></a></li>
-				<li><a href="<c:url value='/calendars'/>"><spring:message
+				<li><a href="<c:url value='/CalendarProduct'/>"><spring:message
 					code="label.CALENDARS" /></a></li>
-				<li><a href="<c:url value='/games'/>"><spring:message
+				<li><a href="<c:url value='/GameProduct'/>"><spring:message
 					code="label.GAMES" /></a></li>
-				<li><a href="<c:url value='/cards'/>"><spring:message
+				<li><a href="<c:url value='/CardProduct'/>"><spring:message
 					code="label.CARDS" /></a></li>
 			</ul>
 		</div>

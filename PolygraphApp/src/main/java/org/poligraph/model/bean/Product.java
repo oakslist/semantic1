@@ -11,6 +11,7 @@ public class Product implements Serializable {
 	private int price;
 	private int quantity;
 	private String link;
+	private String category;
 	
 	public Product() {
 		
@@ -69,14 +70,21 @@ public class Product implements Serializable {
 	public void setLink(String link) {
 		this.link = link;
 	}
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = getShortValue(category);;
+	}
 
 	@Override
 	public String toString() {
 		return "Product [fullName=" + fullName + ", shortName=" + shortName
 				+ ", price=" + price + ", quantity=" + quantity + ", link="
-				+ link + "]";
+				+ link + ", category=" + category + "]";
 	}
-
 
 	
 }

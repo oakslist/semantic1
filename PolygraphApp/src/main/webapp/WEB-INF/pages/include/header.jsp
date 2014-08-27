@@ -22,15 +22,15 @@
 		<div class="pages-header">
 			<a href="<c:url value='/main'/>"><spring:message
 				code="label.HOME" /></a>
-			<a href="<c:url value='/books'/>"><spring:message
+			<a href="<c:url value='/BookProduct'/>"><spring:message
 				code="label.BOOKS" /></a>
-			<a href="<c:url value='/notes'/>"><spring:message
+			<a href="<c:url value='/NoteProduct'/>"><spring:message
 				code="label.NOTES" /></a>
-			<a href="<c:url value='/calendars'/>"><spring:message
+			<a href="<c:url value='/CalendarProduct'/>"><spring:message
 				code="label.CALENDARS" /></a>
-			<a href="<c:url value='/games'/>"><spring:message
+			<a href="<c:url value='/GameProduct'/>"><spring:message
 				code="label.GAMES" /></a>
-			<a href="<c:url value='/cards'/>"><spring:message
+			<a href="<c:url value='/CardProduct'/>"><spring:message
 				code="label.CARDS" /></a>
 		</div>
 	</header>

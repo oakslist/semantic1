@@ -9,12 +9,16 @@
 	<div class="main-header">
 		<jsp:include page="/WEB-INF/pages/include/header.jsp" />
 	</div>
+	<div class="filter-bar">
+		<jsp:include page="/WEB-INF/pages/include/filterBar.jsp" />
+	</div>
 	<div class="main">
 		<h2>${product.shortName}</h2>
 		<div class="items">
 			<p><img src="${product.link}" width="200" height="200"></p>
 			<p>price: ${product.price}$</p>
 			<p>quantity: ${product.quantity}</p>
+			<input type="submit" value="Buy Now">
 		</div>
 		<h3>See Also:</h3>
 		<div class="also">

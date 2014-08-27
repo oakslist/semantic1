@@ -13,32 +13,17 @@
 		<jsp:include page="/WEB-INF/pages/include/filterBar.jsp" />
 	</div>
 	<div class="main">
-		<c:choose>
-			<c:when test="${not empty itemsList}">
-				<h2>Items in category:</h2>
-				<div class="items">
-					<ul>
-						<c:forEach items="${itemsList}" var="item">
-							<li><a href="<c:url value='/books/${item.shortName}'/>">${item.shortName}</a>
-							</li>
-						</c:forEach>
-					</ul>
-				</div>
-				<h3>See Also:</h3>
-				<div class="also">
-					<ul>
-						<c:forEach items="${seeAlsoList}" var="link">
-							<li><a href="${link.subject}">${link.subjectShort}</a></li>
-						</c:forEach>
-					</ul>
-				</div>			
-			</c:when>
-			<c:otherwise>
-				<h2>Hello, my friend! Just choose a category...</h2>
-				<p>or use a filter...</p>
-				
-			</c:otherwise>
-		</c:choose>
+		<h2>Found:</h2>
+		<div class="items">
+			<c:forEach items="${productsList}" var="product">
+					<li>
+						<a href="<c:url value='/${product.category}/${product.shortName}'/>">${product.shortName}</a>
+						<p><img src="${product.link}" width="50" height="50"></p>
+						<p>price: ${product.price}$</p>
+						<p>quantity: ${product.quantity}</p>
+					</li>
+			</c:forEach>
+		</div>
 
 	</div>
 	<div class="main-aside">
