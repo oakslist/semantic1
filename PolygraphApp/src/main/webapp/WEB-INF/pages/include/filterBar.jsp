@@ -11,7 +11,7 @@
 </head>
 <body>
 	<form id="filterId" method="POST" action="<c:url value='/filterQuery/'/>">
-		<p><b>Filter</b> item name: <input id="textId" type="text" name="itemName"> 
+		<p><b>Filters:</b>&nbsp;&nbsp;&nbsp;Item name: <input id="textId" type="text" name="itemName"> 
 		<input type="submit" value="Search"></p>
 	</form>
 	<script>

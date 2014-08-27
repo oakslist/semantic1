@@ -13,17 +13,30 @@
 		<jsp:include page="/WEB-INF/pages/include/filterBar.jsp" />
 	</div>
 	<div class="main">
-		<h2>Found:</h2>
-		<div class="items">
-			<c:forEach items="${productsList}" var="product">
-					<li>
-						<a href="<c:url value='/${product.category}/${product.shortName}'/>">${product.shortName}</a>
-						<p><img src="${product.link}" width="50" height="50"></p>
-						<p>price: ${product.price}$</p>
-						<p>quantity: ${product.quantity}</p>
-					</li>
-			</c:forEach>
-		</div>
+		<c:choose>
+			<c:when test="${not empty productsList}">
+				<h2>Found:</h2>
+				<div class="items">
+					<c:forEach items="${productsList}" var="product">
+						<li><a
+							href="<c:url value='/${product.category}/${product.shortName}'/>">${product.shortName}</a>
+							<p>
+								<img src="${product.link}" width="50" height="50">
+							</p>
+							<p>price: ${product.price}$</p>
+							<p>quantity: ${product.quantity}</p></li>
+					</c:forEach>
+				</div>
+			</c:when>
+			<c:otherwise>
+				<h2>Nothing was not found, try one more time :)</h2>
+				<p>or use a category bar...</p>
+
+			</c:otherwise>
+		</c:choose>
+
+
+
 
 	</div>
 	<div class="main-aside">
