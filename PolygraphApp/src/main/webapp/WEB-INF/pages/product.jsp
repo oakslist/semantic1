@@ -16,9 +16,9 @@
 		<h2>${product.shortName}</h2>
 		<div class="items">
 			<p><img src="${product.link}" width="200" height="200"></p>
-			<p>price: ${product.price}$</p>
-			<p>quantity: ${product.quantity}</p>
-			<input type="submit" value="Buy Now">
+			<p>comment: ${product.comment}</p>
+			<p><b>price: $${product.price}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity: ${product.quantity} pcs</p>
+			<input type="submit" value="Buy It Now">
 		</div>
 		<h3>See Also:</h3>
 		<div class="also">

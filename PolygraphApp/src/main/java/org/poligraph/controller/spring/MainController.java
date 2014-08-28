@@ -43,12 +43,13 @@ public class MainController {
 	public String booksPage(@PathVariable("category") String category,
 			HttpServletRequest request, Model model, ModelMap modelMap) {
 
+		
 		FileManager.get().addLocatorClassLoader(
 				MainController.class.getClassLoader());
 
 		com.hp.hpl.jena.rdf.model.Model tripleModel = FileManager.get()
-				.loadModel(AppConstants.FILE_NAME);
-
+				.loadModel(getClass().getResource(AppConstants.FILE_NAME).toString());
+		
 		String categoryDB = category;
 
 		List<Product> itemsList = new ArrayList<Product>();
@@ -75,6 +76,7 @@ public class MainController {
 				QuerySolution soln = results.nextSolution();
 				Product p = new Product();
 				p.setFullName(soln.get("bookName").toString());
+				p.setCategory(categoryDB);
 				itemsList.add(p);
 			}
 			while (resultsAlso.hasNext()) {
@@ -106,20 +108,21 @@ public class MainController {
 				MainController.class.getClassLoader());
 
 		com.hp.hpl.jena.rdf.model.Model tripleModel = FileManager.get()
-				.loadModel(AppConstants.FILE_NAME);
+				.loadModel(getClass().getResource(AppConstants.FILE_NAME).toString());
 
 		if (!category.equals("filterQuery")) {
 			Product itemProduct = null;
 			List<Subject> seeAlsoList = new ArrayList<Subject>();
 			String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
 					+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "SELECT ?book ?price ?quan ?link WHERE {"
-					+ "?book rdfs:label '"
-					+ itemName
-					+ "' ."
+					+ "SELECT ?book ?price ?quan ?link ?cat ?comment WHERE {"
+					+ "?book rdfs:label '" + itemName + "' ."
 					+ "?book <http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity> ?quan ."
 					+ "?book <http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD> ?price ."
-					+ "?book <http://www.polygraphy.com/ontologies/polygraphy.owl#hasPicture> ?link .}";
+					+ "?book <http://www.polygraphy.com/ontologies/polygraphy.owl#hasPicture> ?link ."
+					+ "?book rdf:type ?cat ."
+					+ "?cat rdf:type <http://www.w3.org/2002/07/owl#Class> ."
+					+ "?book rdfs:comment ?comment .}";
 			Query query = QueryFactory.create(queryString);
 			QueryExecution qexec = QueryExecutionFactory.create(query,
 					tripleModel);
@@ -149,7 +152,9 @@ public class MainController {
 
 					literal = soln.getLiteral("link");
 					itemProduct.setLink(literal.getString());
-
+					
+					itemProduct.setCategory(soln.get("cat").toString());
+					itemProduct.setComment(soln.get("comment").toString());
 				}
 				while (resultsAlso.hasNext()) {
 					QuerySolution soln = resultsAlso.nextSolution();
@@ -175,12 +180,13 @@ public class MainController {
 			List<Product> itemProductList = new ArrayList<Product>();
 			String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
 					+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "SELECT ?item ?price ?quan ?link ?cat WHERE {"
-					+ "?item rdf:type ?cat ."
-					+ "?cat rdf:type <http://www.w3.org/2002/07/owl#Class> ."
+					+ "SELECT ?item ?price ?quan ?link ?cat ?comment WHERE {"
 					+ "?item <http://www.polygraphy.com/ontologies/polygraphy.owl#hasQuantity> ?quan ."
 					+ "?item <http://www.polygraphy.com/ontologies/polygraphy.owl#hasPriceUSD> ?price ."
 					+ "?item <http://www.polygraphy.com/ontologies/polygraphy.owl#hasPicture> ?link ."
+					+ "?item rdfs:comment ?comment ."
+					+ "?item rdf:type ?cat ."
+					+ "?cat rdf:type <http://www.w3.org/2002/07/owl#Class> ."
 					+ "FILTER regex(str(?item), '" + itemName + "', 'i')}";
 			Query query = QueryFactory.create(queryString);
 			QueryExecution qexec = QueryExecutionFactory.create(query,
@@ -202,6 +208,8 @@ public class MainController {
 					itemProduct.setLink(literal.getString());
 					
 					itemProduct.setCategory(soln.get("cat").toString());
+					
+					itemProduct.setComment(soln.get("comment").toString());
 										
 					itemProductList.add(itemProduct);
 				}

@@ -19,7 +19,7 @@
 				<div class="items">
 					<ul>
 						<c:forEach items="${itemsList}" var="item">
-							<li><a href="<c:url value='/books/${item.shortName}'/>">${item.shortName}</a>
+							<li><a href="<c:url value='/${item.category}/${item.shortName}'/>">${item.shortName}</a>
 							</li>
 						</c:forEach>
 					</ul>

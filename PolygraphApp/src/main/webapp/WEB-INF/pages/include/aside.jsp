@@ -10,6 +10,7 @@
 </head>
 <body>
 	<aside class="main-aside-content">
+		<div class="aside-header"><b>Categories:</b></div>
 		<div class="pages-aside">
 			<ul class="pages-aside-ul">
 				<li><a href="<c:url value='/main'/>"><spring:message

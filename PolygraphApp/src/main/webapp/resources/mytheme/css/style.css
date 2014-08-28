@@ -3,10 +3,11 @@
 body {
 	width: 80%;
  	margin: 0 10%;
+
 }
 
 .main-header {
-	background: #CCC;
+	background: #ACD1E9;
 }
 
 .pages-header {
@@ -31,6 +32,10 @@ body {
 .pages-header a {
 	text-decoration: none;
 	margin: 5px;
+}
+
+.aside-header {
+	padding: 5px 5px 0 10px;
 }
 
 .lang {
@@ -72,7 +77,7 @@ body {
 	width: 15%;
 	float: left;
 	color: black;
-	background: #B5CED3;
+	background: #CCC;
 }
 
 .main-aside ul li {
@@ -95,7 +100,7 @@ body {
 
 .main-footer {
 	clear: both;
-	background: #CCCCCC;
+	background: #ACD1E9;
 	text-align: center;
 	width: 100%;
 }

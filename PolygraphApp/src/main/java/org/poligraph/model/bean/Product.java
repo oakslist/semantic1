@@ -12,6 +12,7 @@ public class Product implements Serializable {
 	private int quantity;
 	private String link;
 	private String category;
+	private String comment;
 	
 	public Product() {
 		
@@ -76,15 +77,24 @@ public class Product implements Serializable {
 	}
 
 	public void setCategory(String category) {
-		this.category = getShortValue(category);;
+		this.category = getShortValue(category);
+	}
+	
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = getShortValue(comment);
 	}
 
 	@Override
 	public String toString() {
 		return "Product [fullName=" + fullName + ", shortName=" + shortName
 				+ ", price=" + price + ", quantity=" + quantity + ", link="
-				+ link + ", category=" + category + "]";
+				+ link + ", category=" + category + ", comment=" + comment
+				+ "]";
 	}
 
-	
+
 }

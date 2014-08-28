@@ -23,8 +23,9 @@
 							<p>
 								<img src="${product.link}" width="50" height="50">
 							</p>
-							<p>price: ${product.price}$</p>
-							<p>quantity: ${product.quantity}</p></li>
+							<p>comment: ${product.comment}</p>
+							<p>price: $${product.price}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity: ${product.quantity} pcs</p>
+						</li>
 					</c:forEach>
 				</div>
 			</c:when>
